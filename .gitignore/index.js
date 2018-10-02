@@ -6,7 +6,7 @@ bot.on("ready", function(){
     bot.user.setGame("SushiBrain le meilleur");
 })
 
-client.on('message', message => {
+bot.on('message', message => {
   // If the message is "what is my avatar"
   if (message.content === 'what is my avatar') {
     // Send the user's avatar URL
