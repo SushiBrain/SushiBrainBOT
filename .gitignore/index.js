@@ -6,9 +6,12 @@ bot.on("ready", function(){
     bot.user.setGame("SushiBrain le meilleur");
 })
 
-if (message.content === '=avatar') {
-    
+client.on('message', message => {
+  // If the message is "what is my avatar"
+  if (message.content === 'what is my avatar') {
+    // Send the user's avatar URL
     message.reply(message.author.avatarURL);
-};
+  }
+});
 
 bot.login(process.env.TOKEN);
