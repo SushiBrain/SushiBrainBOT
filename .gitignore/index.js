@@ -7,13 +7,11 @@ bot.on("ready", function(){
 })
 
 client.on('message', message => {
-    if (message.content === '=avatar') {
-      var member= message.mentions.members.first();
-      let embed = new Discord.RichEmbed()
-    .setImage(message.member.avatarURL)
-    .setColor('#275BF0')
-      message.channel.send(embed)
-    }
-  });
+  // If the message is "what is my avatar"
+  if (message.content === 'what is my avatar') {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
+  }
+});
 
 bot.login(process.env.TOKEN);
