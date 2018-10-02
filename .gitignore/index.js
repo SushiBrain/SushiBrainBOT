@@ -5,6 +5,7 @@ var bot = new Discord.Client();
 bot.on("ready", function(){
     bot.user.setGame("SushiBrain le meilleur");
 })
+
 clientInformation.on('message', message => {
     
     if (message.content === "=Admin") {
