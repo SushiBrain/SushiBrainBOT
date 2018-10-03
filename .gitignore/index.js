@@ -14,9 +14,4 @@ bot.on('message', message => {
   }
 });
 
-// Delete a message
-bot.on.message.delete()
-  .then(msg => console.log(`=msg ${msg.author.username}`))
-  .catch(console.error);
-
 bot.login(process.env.TOKEN);
