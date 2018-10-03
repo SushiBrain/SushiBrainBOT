@@ -30,8 +30,6 @@ bot.on('message', message => {
     }
 })
 
-const Discord = require("discord.js");
-
 module.exports.run = async (bot, message, args) => {
 
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: **Tu dois préciser le nombre de messages à supprimer .**");
