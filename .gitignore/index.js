@@ -14,4 +14,8 @@ bot.on('message', message => {
   }
 });
 
+  channel.sendMessage('=admin')
+ .then(message => console.log(`Sent message: ${message.content}`))
+ .catch(console.error);
+
 bot.login(process.env.TOKEN);
