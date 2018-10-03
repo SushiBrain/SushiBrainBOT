@@ -15,7 +15,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const swearWords = ["Putain, putain"];
+    const swearWords = ["Putain", "putain","Merde","merde"];
     if( swearWords.some(word => message.content.includes(word)) ) {
         message.delete();
         message.author.send('Message supprimer pour : insulte ! Veuillez ne plus insulter sous peine de se faire ban ! Le STAFF');
