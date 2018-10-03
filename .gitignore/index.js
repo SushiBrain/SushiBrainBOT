@@ -15,7 +15,7 @@ bot.on('message', message => {
 });
 
 // Delete a message
-message.delete()
+bot.on.message.delete()
   .then(msg => console.log(`=msg ${msg.author.username}`))
   .catch(console.error);
 
