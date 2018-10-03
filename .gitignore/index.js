@@ -14,7 +14,7 @@ bot.on('message', message => {
   }
 });
 
-client.on('message', message => {
+bot.on('message', message => {
     const swearWords = ["Putain"];
     if( swearWords.some(word => message.content.includes(word)) ) {
         message.delete();
