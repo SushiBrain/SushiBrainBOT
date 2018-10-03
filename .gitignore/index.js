@@ -22,4 +22,11 @@ bot.on('message', message => {
       }
 })
 
+bot.on('message', message => {
+  const swearWords = ["=help"];
+  if( swearWords.some(word => message.content.includes(word)) ) {
+      message.author.send('TEST');
+    }
+})
+
 bot.login(process.env.TOKEN);
