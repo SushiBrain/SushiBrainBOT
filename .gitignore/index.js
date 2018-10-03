@@ -30,4 +30,13 @@ bot.on('message', message => {
     }
 })
 
+bot.on('message', message => {
+  const swearWords = ["=clear"];
+
+  if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply(":x: **Tu dois préciser le nombre de messages à supprimer .**");
+  if(!args[0]) return message.channel.send(":x: **Tu dois préciser le nombre de messages à supprimer .**");
+  message.channel.bulkDelete(args[0]).then(() => {
+  message.channel.send(`:pencil2: ${args[0]} messages on été supprimer.`).then(msg => msg.delete(2000));
+});
+
 bot.login(process.env.TOKEN);
