@@ -25,8 +25,8 @@ bot.on('message', message => {
 bot.on('message', message => {
   const swearWords = ["=help"];
   if( swearWords.some(word => message.content.includes(word)) ) {
-      message.author.send('=avatar : pour voir ton avatar,');
-      message.send('=help : pour voir les commandes,');
+      message.author.send('=avatar : pour voir ton avatar,')
+      message.author.send('=help : pour voir les commandes');
     }
 })
 
