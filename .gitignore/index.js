@@ -14,8 +14,9 @@ bot.on('message', message => {
   }
 });
 
-  channel.sendMessage('=admin')
- .then(message => console.log(`Sent message: ${message.content}`))
- .catch(console.error);
+// Delete a message
+message.delete()
+  .then(msg => console.log(`=msg ${msg.author.username}`))
+  .catch(console.error);
 
 bot.login(process.env.TOKEN);
