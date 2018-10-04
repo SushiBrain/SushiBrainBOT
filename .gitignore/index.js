@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function(){
-    bot.user.setGame("être codé par SushiBrain");
+    bot.user.setGame("=help");
 })
 
 bot.on('message', message => {
