@@ -49,14 +49,14 @@ bot.on('message', message => {
 bot.on('message', message => {
   const swearWords = ["=Tristan"];
   if( swearWords.some(word => message.content.includes(word)) ) {
-      message.author.send('Le meilleur pédopanda ! :panda:,')
+      message.author.send('Le meilleur pédopanda ! :panda_face:')
     }
 })
 
 bot.on('message', message => {
   const swearWords = ["=tristan"];
   if( swearWords.some(word => message.content.includes(word)) ) {
-      message.author.send('Le meilleur pédopanda ! :panda:,')
+      message.author.send('Le meilleur pédopanda ! :panda_face:')
     }
 })
 
