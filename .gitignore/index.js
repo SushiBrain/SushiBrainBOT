@@ -63,7 +63,7 @@ bot.on('message', message => {
 bot.on('message', (message) => {
     
     if(message.content == 'Bonjour !') {
-        message.reply('Salut ${user}!');
+        message.reply('Salut !');
     }
 
 })
