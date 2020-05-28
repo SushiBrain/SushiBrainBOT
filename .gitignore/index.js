@@ -68,4 +68,29 @@ bot.on('message', (message) => {
 
 });
 
+bot.on('message', (message) => {
+    
+    if(message.content == 'bonjour !') {
+        message.reply('Salut !');
+    }
+
+});
+
+bot.on('message', (message) => {
+    
+    if(message.content == 'Bonjour') {
+        message.reply('Salut !');
+    }
+
+});
+
+bot.on('message', (message) => {
+    
+    if(message.content == 'bonjour') {
+        message.reply('Salut !');
+    }
+
+});
+
+
 bot.login(process.env.TOKEN);
