@@ -32,12 +32,20 @@ module.exports.run = async (bot, message, args) => {
 
 }
 
-bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "general").send(`Bienvenue ${member}`)
+client.on('guildMemberAdd', member => {
+    const welcomechanel = member.guild.channels.find((x) => x.id === '713383031800594523';
+    let b_embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setDescription(`Bienvenu(e) a ${member.user.username} qui nous a rejoint`)
+    return welcomechanel.send(b_embed)
 })
 
-bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "general").send(`${member} vient de quitter`)
+client.on('guildMemberAdd', member => {
+    const welcomechanel = member.guild.channels.find((x) => x.id === '713383031800594523';
+    let a_embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setDescription(`${member.user.username} nous a quitte`)
+    return welcomechanel.send(a_embed)
 })
 
 bot.login(process.env.TOKEN);
