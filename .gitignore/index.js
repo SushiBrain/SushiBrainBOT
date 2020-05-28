@@ -66,7 +66,7 @@ bot.on('message', (message) => {
         message.reply('Salut !');
     }
 
-});
+})
 
 bot.on('message', (message) => {
     
@@ -74,7 +74,7 @@ bot.on('message', (message) => {
         message.reply('Hey !');
     }
 
-});
+})
 
 bot.on('message', (message) => {
     
@@ -82,7 +82,7 @@ bot.on('message', (message) => {
         message.reply('Hello ^^'');
     }
 
-});
+})
 
 bot.on('message', (message) => {
     
@@ -90,7 +90,7 @@ bot.on('message', (message) => {
         message.reply('Bonsoir !');
     }
 
-});
+})
 
 
 bot.login(process.env.TOKEN);
