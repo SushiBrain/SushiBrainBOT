@@ -32,10 +32,12 @@ module.exports.run = async (bot, message, args) => {
 
 }
 
-clientDiscord.on('guildMemberAdd', member => {
-    member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur' + member.displayName
-    }).catch(console.error);
-}),
+bot.on("guildMemberAdd", member => {
+    member.guild.channels.find("name", "general").send(`Bienvenue ${member}`)
+})
+
+bot.on("guildMemberAdd", member => {
+    member.guild.channels.find("name", "general").send(`${member} vient de quitter`)
+})
 
 bot.login(process.env.TOKEN);
