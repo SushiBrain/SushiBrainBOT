@@ -59,16 +59,11 @@ bot.on('message', message => {
       message.author.send('Le meilleur pédopanda ! :panda_face:')
     }
 })
-
-bot.on("guildMemberAdd", member => {
-    let guild = member.guild;
-    guild.defaultChannel.sendMessage(`Bienvenu(e) ${member.user} dans Camp suprême !`
- });
     
 bot.on('message', (message) => {
     
     if(message.content == 'Bonjour !') {
-        message.reply('Salut ${member.user} !');
+        message.reply('Salut !');
     }
 
 });
