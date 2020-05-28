@@ -15,14 +15,6 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-    const swearWords = ["Putain", "putain","Merde","merde","ntm","NTM"];
-    if( swearWords.some(word => message.content.includes(word)) ) {
-        message.delete();
-        message.author.send('Message supprimé pour : insulte ! Veuillez ne plus insulter sous peine de se faire ban ! Le STAFF');
-      }
-})
-
-bot.on('message', message => {
   const swearWords = ["=help"];
   if( swearWords.some(word => message.content.includes(word)) ) {
       message.author.send('=avatar : pour voir ton avatar,')
@@ -39,5 +31,11 @@ module.exports.run = async (bot, message, args) => {
 });
 
 }
+
+clientDiscord.on('guildMemberAdd', member => {
+    member.createDM().then(channel => {
+        return channel.send('Bienvenue sur le serveur' + member.displayName
+    }).catch(console.error);
+}),
 
 bot.login(process.env.TOKEN);
