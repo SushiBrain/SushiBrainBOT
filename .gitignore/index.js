@@ -40,7 +40,7 @@ client.on('guildMemberAdd', member => {
     return welcomechanel.send(b_embed)
 })
 
-client.on('guildMemberAdd', member => {
+client.on('guildMemberRemove', member => {
     const welcomechanel = member.guild.channels.find((x) => x.id === '713383031800594523';
     let a_embed = new Discord.RichEmbed()
     .setColor('RANDOM')
