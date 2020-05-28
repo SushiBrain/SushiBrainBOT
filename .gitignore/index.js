@@ -90,7 +90,7 @@ bot.on('message', (message) => {
         message.reply('Bonsoir !');
     }
 
-});
+})
 
 
 bot.login(process.env.TOKEN);
