@@ -46,4 +46,18 @@ bot.on('message', message => {
     }
 })
 
+bot.on('message', message => {
+  const swearWords = ["=Tristan"];
+  if( swearWords.some(word => message.content.includes(word)) ) {
+      message.author.send('Le meilleur pédopanda ! :panda:,')
+    }
+})
+
+bot.on('message', message => {
+  const swearWords = ["=tristan"];
+  if( swearWords.some(word => message.content.includes(word)) ) {
+      message.author.send('Le meilleur pédopanda ! :panda:,')
+    }
+})
+
 bot.login(process.env.TOKEN);
