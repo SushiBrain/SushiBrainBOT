@@ -71,7 +71,7 @@ bot.on('message', (message) => {
 bot.on('message', (message) => {
     
     if(message.content == 'bonjour !') {
-        message.reply('Salut !');
+        message.reply('Hey !');
     }
 
 });
@@ -79,7 +79,7 @@ bot.on('message', (message) => {
 bot.on('message', (message) => {
     
     if(message.content == 'Bonjour') {
-        message.reply('Salut !');
+        message.reply('Hello ^^'');
     }
 
 });
@@ -87,7 +87,7 @@ bot.on('message', (message) => {
 bot.on('message', (message) => {
     
     if(message.content == 'bonjour') {
-        message.reply('Salut !');
+        message.reply('Bonsoir !');
     }
 
 });
