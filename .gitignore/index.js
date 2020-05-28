@@ -39,4 +39,11 @@ bot.on('message', message => {
     }
 })
 
+bot.on('message', message => {
+  const swearWords = ["=antoine"];
+  if( swearWords.some(word => message.content.includes(word)) ) {
+      message.author.send('Quel beau gosse ! :smirk: :drooling_face:,')
+    }
+})
+
 bot.login(process.env.TOKEN);
