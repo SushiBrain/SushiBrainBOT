@@ -32,13 +32,4 @@ module.exports.run = async (bot, message, args) => {
 
 }
 
-// Create an event listener for messages
-client.on('message', message => {
-  // If the message is "what is my avatar"
-  if (message.content === '666avatar') {
-    // Send the user's avatar URL
-    message.reply(message.author.displayAvatarURL());
-  }
-});
-
 bot.login(process.env.TOKEN);
