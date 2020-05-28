@@ -63,31 +63,7 @@ bot.on('message', message => {
 bot.on('message', (message) => {
     
     if(message.content == 'Bonjour !') {
-        message.reply('Salut !');
-    }
-
-})
-
-bot.on('message', (message) => {
-    
-    if(message.content == 'bonjour !') {
-        message.reply('Hey !');
-    }
-
-})
-
-bot.on('message', (message) => {
-    
-    if(message.content == 'Bonjour') {
-        message.reply('Hello ^^'');
-    }
-
-})
-
-bot.on('message', (message) => {
-    
-    if(message.content == 'bonjour') {
-        message.reply('Bonsoir !');
+        message.reply('Salut ${user}!');
     }
 
 })
