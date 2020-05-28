@@ -60,5 +60,17 @@ bot.on('message', message => {
     }
 })
 
+bot.on("guildMemberAdd", member => {
+    let guild = member.guild;
+    guild.defaultChannel.sendMessage(`Bienvenu(e) ${member.user} dans Camp suprême !`
+ });
+    
+bot.on('message', (message) => {
+    
+    if(message.content == 'Bonjour !') {
+        message.reply('Salut ${member.user} !');
+    }
+
+});
 
 bot.login(process.env.TOKEN);
