@@ -68,8 +68,4 @@ bot.on('message', (message) => {
 
 })
 
-bot.on('message' message => {
-    message.channel.send("C'est mignon ! :joy:", {files: ["https://imgur.com/a/7SKHtJL"]});
-})
-
 bot.login(process.env.TOKEN);
