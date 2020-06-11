@@ -81,4 +81,17 @@ bot.on('message', message => {
     }
 })
 
+bot.on('message', message => {
+    var prefix = '='
+    var msg = message.content;
+
+    if (msg === prefix + 'kiss') {
+        message.channel.send('Tout mignon ! :joy: :smirk: :drooling_face:', {
+            files: [
+                "https://i.imgur.com/HG3VOcW.jpg?1"
+            ]
+        });
+    }
+})
+
 bot.login(process.env.TOKEN);
