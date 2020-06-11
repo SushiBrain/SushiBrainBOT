@@ -67,5 +67,18 @@ bot.on('message', (message) => {
     }
 
 })
-        
+
+bot.on('message', message => {
+    var prefix = '!'
+    var msg = message.content;
+
+    if (msg === prefix + 'adorable') {
+        message.channel.send('Tout mignon !', {
+            files: [
+                "https://imgur.com/QEoKUPP"
+            ]
+        });
+    }
+})
+
 bot.login(process.env.TOKEN);
