@@ -75,7 +75,7 @@ bot.on('message', message => {
     if (msg === prefix + 'adorable') {
         message.channel.send('Tout mignon !', {
             files: [
-                "https://imgur.com/53PTdoI"
+                "https://i.imgur.com/53PTdoI.png"
             ]
         });
     }
