@@ -68,4 +68,8 @@ bot.on('message', (message) => {
 
 })
 
+message.content.startWith (=adorable)) {
+    message.channel.send("C'est adorable :joy:", {file: ["https://imgur.com/a/7SKHtJL"]});
+}
+
 bot.login(process.env.TOKEN);
