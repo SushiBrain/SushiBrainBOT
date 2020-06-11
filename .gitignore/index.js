@@ -86,9 +86,9 @@ bot.on('message', message => {
     var msg = message.content;
 
     if (msg === prefix + 'kiss') {
-        message.channel.send('Tout mignon ! :joy: :smirk: :drooling_face:', {
+        message.channel.send('Tu veux un bisous ? :heart:', {
             files: [
-                "https://i.imgur.com/HG3VOcW.jpg?1"
+                "https://i.imgur.com/0ng7EL2.jpg"
             ]
         });
     }
