@@ -68,8 +68,16 @@ bot.on('message', (message) => {
 
 })
 
-message.content.startWith (=adorable)) {
-    message.channel.send("C'est adorable :joy:", {file: ["https://imgur.com/a/7SKHtJL"]});
-}
-
+bot.on('message', message=>{
+    
+    let args = message.content.substring(PREFIX.length).split(=);
+                                                              
+    switch(args[0]){
+        case 'send'
+            const attachement = new Attachment('https://cdn.discordapp.com/avatars/334651028827799553/bba7037cdcf26bec5eda158931321a5c.png?size=4096')
+            message.channel.send(message.author, attachment);
+        break;
+    }
+    })
+        
 bot.login(process.env.TOKEN);
