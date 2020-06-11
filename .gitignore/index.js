@@ -75,7 +75,7 @@ bot.on('message', message => {
     if (msg === prefix + 'adorable') {
         message.channel.send('Tout mignon !', {
             files: [
-                "https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/Discord.svg/1200px-Discord.svg.png"
+                "https://imgur.com/53PTdoI"
             ]
         });
     }
