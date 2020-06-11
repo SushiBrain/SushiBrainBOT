@@ -69,7 +69,7 @@ bot.on('message', (message) => {
 })
 
 bot.on('message', message => {
-    var prefix = '!'
+    var prefix = '='
     var msg = message.content;
 
     if (msg === prefix + 'adorable') {
