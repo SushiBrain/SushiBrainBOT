@@ -68,5 +68,12 @@ bot.on('message', (message) => {
 
 })
 
+bot.on('message', (message) => {
+    
+    if(message.content == '=adorable !') {
+        message.reply('https://cdn.discordapp.com/avatars/683292543965724713/a189f20d3fc49f34fdc3b762456d7635.png?size=4096');
+    }
+
+})
 
 bot.login(process.env.TOKEN);
